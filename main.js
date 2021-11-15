@@ -1,3 +1,4 @@
+
 const square = document.querySelector("#square")
 const btn = document.querySelector("#btn")
 const btnGreen = document.querySelector("#btnGreen")

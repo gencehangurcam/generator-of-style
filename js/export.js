@@ -1,0 +1,1 @@
+export const square = document.querySelector("#square")

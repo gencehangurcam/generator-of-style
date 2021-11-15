@@ -5,6 +5,9 @@ const btnRed = document.querySelector("#btnRed")
 const btnBlue = document.querySelector("#btnBlue")
 const border = document.querySelector("#border")
 const dashed = document.querySelector("#dashed")
+const borderTop = document.querySelector("#borderTop")
+const borderTopDeux = document.querySelector("#borderTopDeux")
+const borderTopTrois = document.querySelector("#borderTopTrois")
 //secondSettings ->
 const spin = document.querySelector("#spin")
 const spin2 = document.querySelector("#spin2")
@@ -39,30 +42,39 @@ dashed.addEventListener("click", () => {
     square.style.border = `dashed ${spin.value}px black`
     }
 })
+borderTop.addEventListener("click", () => {
+    square.style.borderTop = "5px solid black"
+})
+borderTopDeux.addEventListener("click", () => {
+    square.style.borderTop = "10px solid black"
+})
+borderTopTrois.addEventListener("click", () => {
+    square.style.borderTop = "15px solid black"
+})
+
 
 
 //secondSettings event click ->
 spin.addEventListener("click", () => {
-    if (square.style.border = `dashed ${spin.value}px solid black`) {
-        square.style.border = `dashed ${spin.value}px solid black`
-    } else {
+    // if (square.style.border = `dashed ${spin.value}px solid black`) {
+    //     square.style.border = `dashed ${spin.value}px solid black`
+    // } else {
     square.style.border = `${spin.value}px solid black`
-    }
 })
 
 spin2.addEventListener("click", () => {
-    square.style.borderRadius = `${spin2.value}px  ${spin3.value}px ${spin4.value}px ${spin5.value}px`
+    square.style.borderRadius = `${spin2.value}1px  ${spin3.value}1px ${spin4.value}1px ${spin5.value}1px`
 })
 
 spin3.addEventListener("click", () => {
-    square.style.borderRadius = `${spin2.value}px ${spin3.value}px ${spin4.value}px ${spin5.value}px`
+    square.style.borderRadius = `${spin2.value}1px ${spin3.value}1px ${spin4.value}1px ${spin5.value}1px`
 })
 
 spin4.addEventListener("click", () => {
-    square.style.borderRadius = `${spin2.value}px ${spin3.value}px ${spin4.value}px ${spin5.value}px`
+    square.style.borderRadius = `${spin2.value}1px ${spin3.value}1px ${spin4.value}1px ${spin5.value}1px`
 })
 
 spin5.addEventListener("click", () => {
-    square.style.borderRadius = `${spin2.value}px ${spin3.value}px ${spin4.value}px ${spin5.value}px`
+    square.style.borderRadius = `${spin2.value}1px ${spin3.value}1px ${spin4.value}1px ${spin5.value}1px`
 })
 

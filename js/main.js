@@ -15,6 +15,12 @@ const spin2 = document.querySelector("#spin2")
 const spin3 = document.querySelector("#spin3")
 const spin4 = document.querySelector("#spin4")
 const spin5 = document.querySelector("#spin5")
+//thirdSettings
+const spinRadius = document.querySelector("#spinRadius")
+const spinLeft = document.querySelector("#spinLeft")
+const spinTop = document.querySelector("#spinTop")
+const spinRight = document.querySelector("#spinRight")
+const spinBottom = document.querySelector("#spinBottom")
 
 //event click
 btn.addEventListener("click", () => {
@@ -77,5 +83,28 @@ spin4.addEventListener("click", () => {
 
 spin5.addEventListener("click", () => {
     square.style.borderRadius = `${spin2.value}1px ${spin3.value}1px ${spin4.value}1px ${spin5.value}1px`
+})
+
+
+
+//thirdSettings event click ->
+spinRadius.addEventListener("click", () => {
+    square.style.borderRadius = `${spinRadius.value}px`
+})
+
+spinLeft.addEventListener("click", () => {
+    square.style.borderLeft = `${spinLeft.value}px solid black`
+})
+
+spinTop.addEventListener("click", () => {
+    square.style.borderTop = `${spinTop.value}px solid black`
+})
+
+spinRight.addEventListener("click", () => {
+    square.style.borderRight = `${spinRight.value}px solid black`
+})
+
+spinBottom.addEventListener("click", () => {
+    square.style.borderBottom = `${spinBottom.value}px solid black`
 })
 

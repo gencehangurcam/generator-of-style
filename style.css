@@ -1,7 +1,7 @@
 * {
     background-color: whitesmoke;
 }
-.container {    
+.container {
     padding: 100px;
     background-color: #fff;
 }
@@ -111,6 +111,42 @@
     height: 30px;
     border: 2px solid black;
     border-radius: 0 0 0 10px;
+}
+
+/* last row */
+.spinRadius{
+    margin-bottom: 10px;
+    width: 50px;
+    height: 30px;
+    border-radius: 20px
+}
+.spinLeft{
+    margin-bottom: 10px;
+    width: 50px;
+    height: 30px;
+    border: 2px solid black;
+    border-left: 5px solid black;
+}
+.spinTop{
+    margin-bottom: 10px;
+    width: 50px;
+    height: 30px;
+    border: 2px solid black;
+    border-top: 5px solid black;
+}
+.spinRight{
+    margin-bottom: 10px;
+    width: 50px;
+    height: 30px;
+    border: 2px solid black;
+    border-right: 5px solid black;
+}
+.spinBottom{
+    margin-bottom: 10px;
+    width: 50px;
+    height: 30px;
+    border: 2px solid black;
+    border-bottom: 5px solid black;
 }
 
 input[type=number]::-webkit-inner-spin-button {
